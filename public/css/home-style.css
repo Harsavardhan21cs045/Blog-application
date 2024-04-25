@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+#header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post-time {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #cce5ff;
+}
+
+
+/* add component' css */
+
+#add-component {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#add-component:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#plus-symbol {
+    font-size: 24px; 
+    margin-right: 10px;
+    color: #007bff; 
+}
+
+#add-component .title {
+    font-size: 16px; 
+    color: #6c757d; 
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Blog</title>
+    <link href="css/home-style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- <h1>hello world!</h1> -->
+    <div id="header">
+        <h1>Team 5 Blog</h1>
+    </div>
+    <div id = "container">
+        <ul style="list-style-type: none;">
+        <% for( let i = 0; i < arr.length; i++ ) { %>
+            <% let blockid = arr[i].id %>
+            <li class="blog-content" onclick="sendrequest('<%= blockid %>')">
+                <div class="title"> <%= arr[i].title %></div>
+                <div class="post-time"> <%= arr[i].time %></div>
+                <div class="description"><%= arr[i].description %></div>
+            </li>
+            <hr>
+        <% } %>
+        <li><%- include('addblog-component.ejs') %></li>
+        </ul>
+    </div>
+    <%- include('footer.ejs') %>
+    <script src="https://kit.fontawesome.com/89d1034fc2.js" crossorigin="anonymous"></script>
+    <script>
+        function sendrequest(blockid){
+            console.log(blockid);
+            window.location.href = `/block?id=${blockid}`;
+        }
+    </script>
+</body>
+</html>

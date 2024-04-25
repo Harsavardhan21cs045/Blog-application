@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="css/showblog-style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="header">
+        <h1>Farhaan's Blog</h1>
+    </div>
+    <div class="container">
+        <div class="blog">
+            <div class="post-info">
+                <span class="posted-at">Posted at:</span>
+                <span class="post-time"><%= time %></span>
+            </div>
+            <div class="blog-content">
+                <h1 class="blog-title"><%= title %></h1>
+                <p class="blog-text"><%= content %></p>
+            </div>
+        </div>
+    </div>
+    <%- include('footer.ejs') %>
+    <script src="https://kit.fontawesome.com/89d1034fc2.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
